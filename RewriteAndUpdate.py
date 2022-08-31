@@ -17,6 +17,5 @@ with open('./README.md', 'w') as file:
 # Push new README to Gitub
 os.system('cmd /c "git add ."')
 os.system('cmd /c "git commit -m \"Incremented README to: ' + currentWrites + '.\""')
-os.system('cmd /k "git push"')
-
-quit()
+os.system('cmd /c "git push"')
+os.system('cmd /c "exit"')
