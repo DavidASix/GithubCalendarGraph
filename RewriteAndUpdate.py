@@ -1,7 +1,9 @@
 import os
 import re
+# Regex to find any generic code blocks in a README
 codeFindRe = "(?<=```)(.*)(?=```)"
 
+# Rewrite the README to show some work is done
 with open('./README.md', 'r') as file:
     rm = file.read()
 
