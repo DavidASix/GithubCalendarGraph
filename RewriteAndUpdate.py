@@ -18,3 +18,5 @@ with open('./README.md', 'w') as file:
 os.system('cmd /c "git add ."')
 os.system('cmd /c "git commit -m \"Incremented README to: ' + currentWrites + '.\""')
 os.system('cmd /k "git push"')
+
+quit()
