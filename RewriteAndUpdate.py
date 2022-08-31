@@ -12,5 +12,7 @@ newText = readMeArr[0] + currentWrites + readMeArr[2]
 with open('./README.md', 'w') as file:
     file.write(newText)
 
+# Push new README to Gitub
 os.system('cmd /c "git add ."')
-os.system('cmd /k "git commit -m \"Incremented README to: ' + currentWrites + '.\""')
+os.system('cmd /c "git commit -m \"Incremented README to: ' + currentWrites + '.\""')
+os.system('cmd /k "git push"')
